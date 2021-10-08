@@ -1,11 +1,19 @@
 {
-  "name": "calculator2",
+  "name": "Calculator2",
   "version": "0.0.1",
-  "description": "Calculato v.2",
-  "main": "index.js",
+  "description": "Calculato v.2.0",
+  "main": ".src/application/Calculator2/application.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node ./src/application/Calculator2/application.js"
   },
   "author": "Vlad Sorokin",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/node": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "prompt-sync": "^4.2.0"
+  }
 }
