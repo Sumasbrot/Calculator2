@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * @file application.js
  * @module application
@@ -32,7 +34,7 @@ function bootstrapApplication() {
     "name": "Vlad Sorokin"
   };
   main.initFramework(appConfig);
-}
+};
 
 /**
  * @function application
@@ -63,8 +65,6 @@ function application() {
       }
     }
   }
-  console.log('BEGIN main program loop');
-
   console.log(`END ${namespacePrefix}${functionName} function`);
 };
 
