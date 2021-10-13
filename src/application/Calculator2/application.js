@@ -30,8 +30,10 @@ var namespacePrefix = `application.${baseFileName}.`;
  * @date 2021/10/07
  */
 function bootstrapApplication() {
+  rootPath = path.resolve(process.cwd()) + '\\application\\Calculator2\\';
   let appConfig = {
-    "name": "Vlad Sorokin"
+    "applicationName": "Calculator2",
+    "rootPath": rootPath
   };
   main.initFramework(appConfig);
 };
@@ -56,7 +58,10 @@ function application() {
     while(programRunning === true) {
       commandInput = prompt('>');
 
-      if (commandInput.toUpperCase() === 'EXIT') {
+      if ((commandInput.toUpperCase() === 'EXIT') ||
+      (commandInput.toUpperCase() === 'Q') ||
+      (commandInput.toUpperCase() === 'QUIT') ||
+      (commandInput.toUpperCase() === 'X')) {
         console.log('END command parser');
         programRunning = false;
         console.log('END main progdam loop');
